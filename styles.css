@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100vw;
+    height: 630px;
+    align-items: start;
+    justify-content: center;
+    background-image: url(/ejercicios-DOM/multimedia/light.webp);
+    background-position: center right fill;
+}
+
+.container h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(30, 30, 30);
+    padding-left: 100px;
+    padding-bottom: 0px;
+}
+
+.container p  {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: rgb(30, 30, 30);
+    width: 500px;
+    padding-left: 100px;
+    padding-top: 0px;
+}
+
+.btn-mode {
+    margin-left: 100px;
+    padding: 10px 40px;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.379);
+    border-radius: 4px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-mode:hover {
+    background-color: rgb(71, 71, 71);
+    box-shadow: none;
+    cursor: pointer
+}
+
+
+.container.dark-mode {
+    background-image: url(/ejercicios-DOM/multimedia/dark.webp);
+}
+
+.container.dark-mode h1, 
+.container.dark-mode p {
+    color: white;
+}
+
+.container.dark-mode .btn-mode {
+    background-color: white;
+    color: black;
+}
+
+.container.dark-mode .btn-mode:hover {
+    background-color: rgb(200, 200, 200);
+}
